@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Personal Translator 2.0</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Main content area -->
+      <main class="translator">
+        <!-- Swiper icons -->
+        <i id="swiper" class="ri-global-line"></i>
+        <i id="swiper-new-tab" class="ri-global-line"></i>
+
+        <!-- Input Section -->
+        <section class="input-section">
+          <!-- Header -->
+          <div class="head-section">
+            <div class="language-box">
+              <span class="langauge-text">Detect language</span>
+            </div>
+            <div
+              class="language-box curractive"
+              id="input-current-language-box"
+            >
+              <span
+                class="langauge-text active"
+                id="input-current-language"
+                data-language-code="en"
+                >English</span
+              >
+            </div>
+            <div class="language-box" id="input-previous-language-box">
+              <span
+                class="langauge-text"
+                id="input-previous-language"
+                data-language-code="hi"
+                >Hindi</span
+              >
+            </div>
+            <div class="dropdown-icon-box" id="input-dropdown-icon">
+              <i id="dropdown" class="ri-arrow-down-s-line"></i>
+            </div>
+          </div>
+          <!-- Dropdown section -->
+          <div class="dropdown-section" id="input-dropdownbox">
+            <!-- Input text area -->
+            <div class="search-box">
+              <div class="back-icon-box">
+                <i id="back-icon" class="ri-arrow-left-line"></i>
+              </div>
+              <div class="input-container">
+                <input
+                  class="input"
+                  type="text"
+                  placeholder="Search language"
+                />
+              </div>
+            </div>
+            <div class="input-countrys-languages">
+              <!-- Language options will be populated here -->
+            </div>
+          </div>
+          <div class="input-box">
+            <textarea
+              name="input"
+              id="input-text"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <!-- Bottom section -->
+          <div class="input-bottom-section">
+            <div class="user-action">
+              <i id="input-sound-icon" class="ri-volume-up-line"></i>
+              <i id="input-copy-icon" class="ri-clipboard-line"></i>
+            </div>
+            <button class="input-tab">New Tab</button>
+          </div>
+        </section>
+
+        <!-- Output Section -->
+        <section class="output-section">
+          <!-- Header -->
+          <div class="head-section">
+            <div
+              class="language-box curractive"
+              id="output-current-language-box"
+            >
+              <span
+                class="langauge-text active"
+                id="output-current-language"
+                data-language-code="hi"
+                >Hindi</span
+              >
+            </div>
+            <div class="language-box" id="output-previous-language-box">
+              <span
+                class="langauge-text"
+                id="output-previous-language"
+                data-language-code="ur"
+                >Urdu</span
+              >
+            </div>
+            <!-- Dropdown section -->
+            <div class="dropdown-icon-box" id="output-dropdown-icon">
+              <i id="dropdown" class="ri-arrow-down-s-line"></i>
+            </div>
+          </div>
+          <div class="dropdown-section" id="output-dropdownbox">
+            <div class="search-box">
+              <div class="back-icon-box">
+                <i id="back-icon" class="ri-arrow-left-line"></i>
+              </div>
+              <div class="input-container">
+                <input
+                  class="input"
+                  type="text"
+                  placeholder="Search language"
+                />
+              </div>
+            </div>
+            <div class="output-countrys-languages">
+              <!-- Language options will be populated here -->
+            </div>
+          </div>
+          <!-- Output text area -->
+          <div class="output-box">
+            <textarea
+              name="output"
+              id="output-text"
+              cols="30"
+              rows="10"
+              readonly
+            ></textarea>
+          </div>
+          <!-- Bottom section -->
+          <div class="output-bottom-section">
+            <div class="user-action">
+              <i id="output-sound-icon" class="ri-volume-up-line"></i>
+              <i id="output-copy-icon" class="ri-clipboard-line"></i>
+            </div>
+            <button class="output-tab">New Tab</button>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

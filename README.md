@@ -2,6 +2,11 @@
 
 Welcome to Personal Translator v1.0! This is a simple web application that allows users to translate text from one language to another. The application utilizes the MyMemory translation API for providing translations.
 
+## Updates in Progress
+
+I'm currently working on enhancing the project by adding new features and addressing any bugs. Your feedback and contributions are highly appreciated as I continue to improve the functionality and user experience.
+
+
 ## Features
 
 - Translate text from one language to another.
